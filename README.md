@@ -33,6 +33,7 @@ In the future, we aim to extend this project to automatically execute trades bas
    cd automatic-trading-robinhood
 
 ## **Example Output**
+```bash
 Generated OTP: 123456
 Logged in with OTP.
 Buying power = 15000.00
