@@ -31,3 +31,18 @@ In the future, we aim to extend this project to automatically execute trades bas
    ```bash
    git clone https://github.com/yourusername/automatic-trading-robinhood.git
    cd automatic-trading-robinhood
+
+## **Example Output**
+Generated OTP: 123456
+Logged in with OTP.
+Buying power = 15000.00
+Owned Stocks = {
+    'VTI' : {'quantity': 50, 'average_price': 205.00, 'current_price': 220.00},
+    'QQQ' : {'quantity': 20, 'average_price': 330.00, 'current_price': 340.00}
+}
+Stocks: ['VTI', 'QQQ', 'DIA']
+Moving Averages and Hull Moving Averages: 
+VTI: {'50_day_MA': 220.25, '200_day_MA': 210.50, 'HMA': 215.75}
+QQQ: {'50_day_MA': 335.50, '200_day_MA': 330.00, 'HMA': 332.85}
+DIA: {'50_day_MA': 350.00, '200_day_MA': 340.00, 'HMA': 345.60}
+Prices: [220.30, 340.50, 350.25]
