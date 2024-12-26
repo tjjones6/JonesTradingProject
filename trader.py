@@ -22,11 +22,10 @@ def get_login_info_from_file():
     Returns:
         tuple: A tuple containing username, password, and TOTP secret key.
     """
-    with open('login_info.py', 'r') as file:
-        # Example hard-coded values for demonstration. Ideally, these should be read from the file
-        username = "tjsenoj@gmail.com"
-        password = "Tj11060683a"
-        totp_secret = "6ZW2JQUNQ2ZZL5LM"
+    with open('login_info.txt', 'r') as file:
+        username = file.readline().strip()  
+        password = file.readline().strip() 
+        totp_secret = file.readline().strip()  
     return username, password, totp_secret
 
 def is_valid_base32(secret):
@@ -67,7 +66,7 @@ def login(days):
     print(f"Generated OTP: {otp_code}")
 
     # You can replace this line with the backup code (in case TOTP fails)
-    backup_code = "129642"  # Replace this with your backup code if needed
+    backup_code = "129642"  # Backup code from Robinhood account
 
     # Try logging in with the generated OTP first
     try:
@@ -80,7 +79,7 @@ def login(days):
         rh.authentication.login(username, password, mfa_code=backup_code, scope='internal', by_sms=True, store_session=True)
         print("Logged in with backup code.")
         
-    time_logged_in = 60*60*24*days
+    time_logged_in = 60*60*24*days # Seconds
 
 def logout():
     """
