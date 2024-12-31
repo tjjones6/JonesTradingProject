@@ -30,11 +30,34 @@
             margin: 10px 0 0;
             font-style: italic;
         }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+            text-decoration-color: #2575fc;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Jones Trading Project</h1>
+    </div>
+
+    <!-- TODO: Need to add files for the nav bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#moving-averages">Moving Averages</a>
+        <a href="#real-time">Real-Time Chart</a>
     </div>
     <h1 style="text-align: center;">Stock Moving Averages</h1>
     <canvas id="movingAverageChart"></canvas>
