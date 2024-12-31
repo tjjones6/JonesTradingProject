@@ -1,7 +1,7 @@
 # **Automatic Trading Algorithm in Robinhood**
 
 **Authors**: Tyler Jones, Cody Jones
-**Last Edit**: 12.26.2024  
+**Last Edit**: 12.31.2024  
 
 ---
 
